@@ -65,6 +65,14 @@ public class LinkedList{
       n.next == n.next.next; // nao cheguei no final da lista, apontar a posicao atual para o proximo do proximo
     }
   }
+  
+  public void show(){
+    Node n = head;
+    while(n != null){
+      System.out.printf("%2d%s", n.data, n.next==null? "\n", " ");
+    }
+  
+  }
 
 
 }
